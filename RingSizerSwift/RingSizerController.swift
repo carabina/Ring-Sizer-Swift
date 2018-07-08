@@ -62,10 +62,26 @@ class RingSizerController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         
         self.ringSizes = self.ringSizer.getRingSizes()
+
+        self.ringSizer.textFont = UIFont.systemFont(ofSize: 12)
+        self.ringSizer.textColor = UIColor.black;
+        self.ringSizer.textBgColor = UIColor.gray
+
+        self.ringSizer.arrowColor = UIColor.gray;
+        self.ringSizer.arrowStrokeWidth = 1.0
+
+        self.ringSizer.linesColor = UIColor.gray;
+        self.ringSizer.linesStrokeWidth = 1.0
+        
+        self.ringSizer.linesColor = UIColor.red
+        self.ringSizer.ringStrokeWidth = 1.0
+        
         if self.ringSizes.count > 1
         {
             self.slider.maximumValue = Float.init(self.ringSizes.count - 1)
         }
+        // 9.91 millimeter size 0000
+        self.ringSizer .setSize(diameter: 9.91, text: "0000");
         
     }
 

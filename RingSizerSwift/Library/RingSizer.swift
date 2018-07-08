@@ -33,7 +33,7 @@ import QuartzCore
 class RingSizer : UIView
 {
     // Display ring size in the middle of the circle.
-    let textLabel : UILabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 20))
+    private let textLabel : UILabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 20))
     // Stroke width of the arrows
     @IBInspectable var arrowStrokeWidth : CGFloat = 1.0
     // Stroke width of the lines of the grid
@@ -43,9 +43,9 @@ class RingSizer : UIView
     
     // Diameter of the ring. Should be in mm
     @IBInspectable var diameter : CGFloat = 9.91
-    // Color of the arrows drawn. To remove arrows set UIColor.clear
+    // Color of the arrows drawn. To remove color set UIColor.clear
     @IBInspectable var arrowColor  : UIColor = UIColor.gray
-    // Color of the grid lines drawn. To remove arrows set UIColor.clear
+    // Color of the grid lines drawn. To remove color set UIColor.clear
     @IBInspectable var linesColor  : UIColor = UIColor.gray
     // Color of the text of textLabel.
     @IBInspectable var textColor   : UIColor = UIColor.black
