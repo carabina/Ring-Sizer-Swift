@@ -60,7 +60,7 @@ class RingSizerController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+            
         self.ringSizes = self.ringSizer.getRingSizes()
 
         self.ringSizer.textFont = UIFont.systemFont(ofSize: 12)

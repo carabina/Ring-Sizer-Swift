@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-black.svg)](https://github.com/zelin/Ring-Sizer-Swift)
 [![Donate Bitcoin](https://img.shields.io/badge/Donate-Bitcoin-green.svg)](http://neberox.tk/donate/?amount=2&currency=USD)
 
-![Screenshot 1](./Screenshots/image.gif)
+![Screenshot 1](./Screenshots/main.gif)
 
 ## Installation
 
@@ -18,6 +18,22 @@ end
 ```
 
 ## Usage
+
+### Integration
+
+Add it via code programmatically
+
+```swift 
+        
+let ringsizer : RingSizer = RingSizer.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
+ringsizer.center = self.view.center;
+self.view.addSubview(ringsizer)
+
+```
+
+Or via Storyboard
+
+![Screenshot 2](./Screenshots/main.png)
 
 ### Options available
 
